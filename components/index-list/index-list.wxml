@@ -1,0 +1,14 @@
+<!--components/index-list/index-list.wxml-->
+<!-- 字母 -->
+<view class="index-english" bindtouchmove="handleTouchmoveTest">
+
+  <view wx:for="{{arrIdArr}}" wx:for-item="item" wx:key="{{index}}" 
+        id="{{item}}" catchtouchstart="handleTouchstart" catchtouchmove="handleTouchmove" catchtouchend="handleTouchend"
+        style="height: {{idItemHeight}}px"
+        >
+        {{item}} 
+  </view>
+
+</view>
+<!-- 选中屏幕中间提示 -->
+<view class="index-name" wx:if="{{indexShow}}">{{indexEnglish}}</view>

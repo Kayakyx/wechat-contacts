@@ -1,0 +1,25 @@
+<!--pages/contacts/contacts.wxml-->
+<!-- <text>pages/contacts/contacts.wxml</text> -->
+
+
+<scroll-view class="contact_list" scroll-into-view="{{toViewId}}" style="height:{{windowHeight}}px;" scroll-y>
+  <block wx:for="{{contactsList}}" wx:key="{{item.kind}}">
+    <view class="tit" id="{{item.kind}}">{{item.kind}}</view>
+    <view class='box'>
+      <!--li-->
+      <view class="item" wx:for="{{item.entitys}}" wx:for-item="itemJ" wx:key="*itemJ">
+        <navigator url="./contact-detail/contact-detail?managerCode={{itemJ.managerCode}}"  hover-class='none'>
+          <view class="item_left">
+            <image src="{{itemJ.img ? itemJ.img : '../../resources/images/user_head.png'}}" class="img"/>
+          </view>
+          <view class="item_info">{{itemJ.name}}</view>
+        </navigator>
+      </view>
+      <!--li-->
+    </view>
+  </block>
+</scroll-view>
+
+
+<!-- 字母排序 -->
+<index-list bind:onChange="handleLetterOrder"></index-list>

@@ -1,0 +1,33 @@
+/* components/index-list/index-list.wxss */
+
+.index-english{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: auto;
+    text-align: center;
+    font-size: 18rpx;
+    color: #307af3;
+}
+
+.index-english view{
+    /* height: 15px; */
+}
+
+.index-name{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160rpx;
+    height: 160rpx;
+    font-size: 100rpx;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 160rpx;
+    border-radius: 50%;
+    color: #fff;
+}

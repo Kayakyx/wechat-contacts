@@ -1,0 +1,30 @@
+/* pages/contacts/contacts.wxss */
+.contact_list .box {
+  padding: 0 18px 0 10px;
+}
+.contact_list .tit{
+  padding:0 10px;
+}
+
+.contact_list .item {
+  float: left;
+  width: 100%;
+  padding: 12px 0;
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  height: 68rpx;
+  line-height: 68rpx;
+  overflow: hidden;
+}
+
+.contact_list .item .item_left {
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact_list .item .item_left .img {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+}
